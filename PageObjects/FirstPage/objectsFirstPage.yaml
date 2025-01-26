@@ -1,0 +1,2 @@
+nextgendigital_logo: '//android.widget.ImageView[@resource-id="com.example.myapplication:id/imageView4"]'
+nextgen_text: '//android.widget.TextView[@resource-id="com.example.myapplication:id/textView"]'

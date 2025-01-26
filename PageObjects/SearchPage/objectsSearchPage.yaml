@@ -1,0 +1,7 @@
+search_menu: '//android.widget.Button[@resource-id="com.example.myapplication:id/search_flight"]'
+enterflightnumber_text: '//android.widget.TextView[@resource-id="com.example.myapplication:id/enterFlight"]'
+search_field: '//android.widget.EditText[@resource-id="com.example.myapplication:id/flight_number"]'
+search_btn: '//android.widget.Button[@resource-id="com.example.myapplication:id/searchFlight"]'
+result: '//android.widget.TableLayout'
+result_flightnum: '//android.widget.TextView[@text="DA 935"]'
+search_error_toast: '//android.widget.Toast[@text="Please enter valid Flight Number"]'
