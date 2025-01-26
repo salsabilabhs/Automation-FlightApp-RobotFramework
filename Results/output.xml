@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.13.1 on win32)" generated="2025-01-26T16:47:55.200031" rpa="false" schemaversion="5">
+<suite id="s1" name="RobotFramework-BookFlight" source="C:\Users\Maxxi\RobotFramework-BookFlight">
+<suite id="s1-s1" name="Suites" source="C:\Users\Maxxi\RobotFramework-BookFlight\Suites">
+<suite id="s1-s1-s1" name="searchSuites" source="C:\Users\Maxxi\RobotFramework-BookFlight\Suites\searchSuites.robot">
+<test id="s1-s1-s1-t1" name="User Search by Valid Flight Number" line="14">
+<kw name="Run Keywords" owner="BuiltIn" type="SETUP">
+<kw name="Open BookFlight App" owner="base">
+<kw name="Open Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-01-26T16:48:09.097416" elapsed="0.001797">Execution terminated by signal</status>
+</kw>
+<msg time="2025-01-26T16:48:09.107137" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Execution terminated by signal</msg>
+<arg>remote_url=${remote_url}</arg>
+<arg>platformName=${platform_name}</arg>
+<arg>platformVersion=${platform_version}</arg>
+<arg>deviceName=${device_name}</arg>
+<arg>appPackage=${app_package}</arg>
+<arg>appActivity=${app_activity}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="FAIL" start="2025-01-26T16:47:55.761102" elapsed="13.353998">Execution terminated by signal</status>
+</kw>
+<status status="FAIL" start="2025-01-26T16:47:55.758875" elapsed="13.357927">Execution terminated by signal</status>
+</kw>
+<arg>Open BookFlight App</arg>
+<arg>User Login with Valid Credentials</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="FAIL" start="2025-01-26T16:47:55.757106" elapsed="13.360558">Execution terminated by signal</status>
+</kw>
+<kw name="Close BookFlight App" owner="base" type="TEARDOWN">
+<kw name="Close Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-01-26T16:48:09.128226" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-01-26T16:48:09.126398" elapsed="0.026963">No application is open</status>
+</kw>
+<msg time="2025-01-26T16:48:09.164485" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-01-26T16:48:09.175871" level="FAIL">No application is open</msg>
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="FAIL" start="2025-01-26T16:48:09.124505" elapsed="0.059764">No application is open</status>
+</kw>
+<status status="FAIL" start="2025-01-26T16:48:09.121555" elapsed="0.063836">No application is open</status>
+</kw>
+<status status="FAIL" start="2025-01-26T16:47:55.753795" elapsed="13.433540">Setup failed:
+Execution terminated by signal
+
+Also teardown failed:
+No application is open</status>
+</test>
+<test id="s1-s1-s1-t2" name="User Search by Invalid Flight Number" line="23">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2025-01-26T16:48:09.202968" elapsed="0.007370">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" start="2025-01-26T16:47:55.257303" elapsed="13.961610"/>
+</suite>
+<status status="FAIL" start="2025-01-26T16:47:55.249743" elapsed="13.981573"/>
+</suite>
+<status status="FAIL" start="2025-01-26T16:47:55.211696" elapsed="14.034795"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat info="combined" combined="NOT robot:exit" pass="0" fail="1" skip="0">NOT robot:exit</stat>
+</tag>
+<suite>
+<stat name="RobotFramework-BookFlight" id="s1" pass="0" fail="2" skip="0">RobotFramework-BookFlight</stat>
+<stat name="Suites" id="s1-s1" pass="0" fail="2" skip="0">RobotFramework-BookFlight.Suites</stat>
+<stat name="searchSuites" id="s1-s1-s1" pass="0" fail="2" skip="0">RobotFramework-BookFlight.Suites.searchSuites</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-01-26T16:48:09.107137" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Execution terminated by signal</msg>
+<msg time="2025-01-26T16:48:09.164485" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+</errors>
+</robot>

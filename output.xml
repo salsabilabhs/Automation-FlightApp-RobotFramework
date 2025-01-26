@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.13.1 on win32)" generated="2025-01-26T16:34:27.079577" rpa="false" schemaversion="5">
+<suite id="s1" name="searchsUITES" source="c:\Users\Maxxi\RobotFramework-BookFlight\Suites\searchsUITES.robot">
+<test id="s1-t1" name="User Search by Invalid Flight Number" line="24">
+<kw name="Run Keywords" owner="BuiltIn" type="SETUP">
+<kw name="Open BookFlight App" owner="base">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>remote_url=${remote_url}</arg>
+<arg>platformName=${platform_name}</arg>
+<arg>platformVersion=${platform_version}</arg>
+<arg>deviceName=${device_name}</arg>
+<arg>appPackage=${app_package}</arg>
+<arg>appActivity=${app_activity}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2025-01-26T16:34:27.895373" elapsed="15.817108"/>
+</kw>
+<status status="PASS" start="2025-01-26T16:34:27.894374" elapsed="15.819730"/>
+</kw>
+<kw name="User Login with Valid Credentials" owner="loginPage">
+<kw name="Verify First Page Appears" owner="firstPage">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-01-26T16:34:46.767091" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.command (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\jsonwp-proxy\proxy.js:274:13)
+    at runMicrotasks (&lt;anonymous&gt;)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at AndroidUiautomator2Driver.commands.getScreenshot (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\commands\screenshot.js:14:10)</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-01-26T16:34:46.739492" elapsed="0.083348">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.command (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\jsonwp-proxy\proxy.js:274:13)
+    at runMicrotasks (&lt;anonymous&gt;)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at AndroidUiautomator2Driver.commands.getScreenshot (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\commands\screenshot.js:14:10)</status>
+</kw>
+<msg time="2025-01-26T16:34:46.831879" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.command (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\jsonwp-proxy\proxy.js:274:13)
+    at runMicrotasks (&lt;anonymous&gt;)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at AndroidUiautomator2Driver.commands.getScreenshot (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\commands\screenshot.js:14:10)</msg>
+<msg time="2025-01-26T16:34:46.845115" level="INFO">xpath criteria: //android.widget.ImageView[@resource-id="com.example.myapplication:id/imageView4"]</msg>
+<msg time="2025-01-26T16:34:46.847551" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+    at UIA2Proxy.command (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\jsonwp-proxy\proxy.js:274:13)
+    at runMicrotasks (&lt;anonymous&gt;)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at AndroidUiautomator2Driver.helpers.doFindElementOrEls (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\commands\find.js:30:12)
+    at doFind (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-android-driver\lib\commands\find.js:36:17)
+    at wrappedCondFn (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\timeout.js:151:12)
+    at spin (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\asyncbox\lib\asyncbox.js:138:20)
+    at waitForCondition (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\asyncbox\lib\asyncbox.js:155:10)
+    at AndroidUiautomator2Driver.implicitWaitForCondition (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\timeout.js:153:10)
+    at AndroidUiautomator2Driver.findElOrEls (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-android-driver\lib\commands\find.js:60:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\find.js:33:12)
+    at AndroidUiautomator2Driver.findElements (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\find.js:63:10)</msg>
+<arg>${nextgendigital_logo}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="FAIL" start="2025-01-26T16:34:43.722923" elapsed="3.143421">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+    at UIA2Proxy.command (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\jsonwp-proxy\proxy.js:274:13)
+    at runMicrotasks (&lt;anonymous&gt;)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at AndroidUiautomator2Driver.helpers.doFindElementOrEls (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\commands\find.js:30:12)
+    at doFind (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-android-driver\lib\commands\find.js:36:17)
+    at wrappedCondFn (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\timeout.js:151:12)
+    at spin (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\asyncbox\lib\asyncbox.js:138:20)
+    at waitForCondition (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\asyncbox\lib\asyncbox.js:155:10)
+    at AndroidUiautomator2Driver.implicitWaitForCondition (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\timeout.js:153:10)
+    at AndroidUiautomator2Driver.findElOrEls (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-android-driver\lib\commands\find.js:60:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\find.js:33:12)
+    at AndroidUiautomator2Driver.findElements (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\find.js:63:10)</status>
+</kw>
+<status status="FAIL" start="2025-01-26T16:34:43.719270" elapsed="3.150281">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+    at UIA2Proxy.command (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\jsonwp-proxy\proxy.js:274:13)
+    at runMicrotasks (&lt;anonymous&gt;)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at AndroidUiautomator2Driver.helpers.doFindElementOrEls (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\commands\find.js:30:12)
+    at doFind (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-android-driver\lib\commands\find.js:36:17)
+    at wrappedCondFn (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\timeout.js:151:12)
+    at spin (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\asyncbox\lib\asyncbox.js:138:20)
+    at waitForCondition (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\asyncbox\lib\asyncbox.js:155:10)
+    at AndroidUiautomator2Driver.implicitWaitForCondition (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\timeout.js:153:10)
+    at AndroidUiautomator2Driver.findElOrEls (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-android-driver\lib\commands\find.js:60:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\find.js:33:12)
+    at AndroidUiautomator2Driver.findElements (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\find.js:63:10)</status>
+</kw>
+<kw name="Click Menu Sign In" owner="loginPage">
+<status status="NOT RUN" start="2025-01-26T16:34:46.871890" elapsed="0.000798"/>
+</kw>
+<kw name="Verify Login Page Appears" owner="loginPage">
+<status status="NOT RUN" start="2025-01-26T16:34:46.874376" elapsed="0.000420"/>
+</kw>
+<kw name="Input Valid Username" owner="loginPage">
+<arg>${email}</arg>
+<status status="NOT RUN" start="2025-01-26T16:34:46.875443" elapsed="0.000626"/>
+</kw>
+<kw name="Input Valid Password" owner="loginPage">
+<arg>${password}</arg>
+<status status="NOT RUN" start="2025-01-26T16:34:46.877221" elapsed="0.002342"/>
+</kw>
+<kw name="Click Sign In" owner="loginPage">
+<status status="NOT RUN" start="2025-01-26T16:34:46.881459" elapsed="0.004771"/>
+</kw>
+<kw name="Verify User Successfully Logged In" owner="firstPage">
+<status status="NOT RUN" start="2025-01-26T16:34:46.888171" elapsed="0.000985"/>
+</kw>
+<status status="FAIL" start="2025-01-26T16:34:43.715813" elapsed="3.174772">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+    at UIA2Proxy.command (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\jsonwp-proxy\proxy.js:274:13)
+    at runMicrotasks (&lt;anonymous&gt;)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at AndroidUiautomator2Driver.helpers.doFindElementOrEls (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\commands\find.js:30:12)
+    at doFind (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-android-driver\lib\commands\find.js:36:17)
+    at wrappedCondFn (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\timeout.js:151:12)
+    at spin (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\asyncbox\lib\asyncbox.js:138:20)
+    at waitForCondition (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\asyncbox\lib\asyncbox.js:155:10)
+    at AndroidUiautomator2Driver.implicitWaitForCondition (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\timeout.js:153:10)
+    at AndroidUiautomator2Driver.findElOrEls (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-android-driver\lib\commands\find.js:60:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\find.js:33:12)
+    at AndroidUiautomator2Driver.findElements (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\find.js:63:10)</status>
+</kw>
+<arg>Open BookFlight App</arg>
+<arg>User Login with Valid Credentials</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="FAIL" start="2025-01-26T16:34:27.893153" elapsed="18.998591">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+    at UIA2Proxy.command (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\jsonwp-proxy\proxy.js:274:13)
+    at runMicrotasks (&lt;anonymous&gt;)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at AndroidUiautomator2Driver.helpers.doFindElementOrEls (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\commands\find.js:30:12)
+    at doFind (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-android-driver\lib\commands\find.js:36:17)
+    at wrappedCondFn (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\timeout.js:151:12)
+    at spin (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\asyncbox\lib\asyncbox.js:138:20)
+    at waitForCondition (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\asyncbox\lib\asyncbox.js:155:10)
+    at AndroidUiautomator2Driver.implicitWaitForCondition (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\timeout.js:153:10)
+    at AndroidUiautomator2Driver.findElOrEls (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-android-driver\lib\commands\find.js:60:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\find.js:33:12)
+    at AndroidUiautomator2Driver.findElements (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\find.js:63:10)</status>
+</kw>
+<kw name="Close BookFlight App" owner="base" type="TEARDOWN">
+<kw name="Close Application" owner="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" start="2025-01-26T16:34:46.905368" elapsed="1.353713"/>
+</kw>
+<status status="PASS" start="2025-01-26T16:34:46.902118" elapsed="1.357904"/>
+</kw>
+<status status="FAIL" start="2025-01-26T16:34:27.888453" elapsed="20.373477">Setup failed:
+WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+    at UIA2Proxy.command (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\jsonwp-proxy\proxy.js:274:13)
+    at runMicrotasks (&lt;anonymous&gt;)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at AndroidUiautomator2Driver.helpers.doFindElementOrEls (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\commands\find.js:30:12)
+    at doFind (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-android-driver\lib\commands\find.js:36:17)
+    at wrappedCondFn (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\timeout.js:151:12)
+    at spin (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\asyncbox\lib\asyncbox.js:138:20)
+    at waitForCondition (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\asyncbox\lib\asyncbox.js:155:10)
+    at AndroidUiautomator2Driver.implicitWaitForCondition (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\timeout.js:153:10)
+    at AndroidUiautomator2Driver.findElOrEls (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-android-driver\lib\commands\find.js:60:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\find.js:33:12)
+    at AndroidUiautomator2Driver.findElements (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\commands\find.js:63:10)</status>
+</test>
+<status status="FAIL" start="2025-01-26T16:34:27.095509" elapsed="21.178228"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="searchsUITES" id="s1" pass="0" fail="1" skip="0">searchsUITES</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-01-26T16:34:46.831879" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.command (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\jsonwp-proxy\proxy.js:274:13)
+    at runMicrotasks (&lt;anonymous&gt;)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at AndroidUiautomator2Driver.commands.getScreenshot (C:\Users\Maxxi\AppData\Local\Programs\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\commands\screenshot.js:14:10)</msg>
+</errors>
+</robot>
